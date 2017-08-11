@@ -1,5 +1,5 @@
 /**************************************************
-				JAVASCRIPT FUNCTIONS
+                JAVASCRIPT FUNCTIONS
 ***************************************************/
 //uses prototype
 //<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
@@ -14,75 +14,75 @@
 //validates form using reg exp
 function formValidation(){
 
-	//all fields start w/ 
-	var blank = "*";
+    //all fields start w/ 
+    var blank = "*";
 
-	// if field is empty
-	var required = "* This field is required";
+    // if field is empty
+    var required = "* This field is required";
 
-	//	NAME
-	var name = $("name").value;
-	var name_pattern = /^\w{6,16}$/;
-	var name_error = "* Invalid input: username must be 6-16 characters";
+    //  NAME
+    var name = $("name").value;
+    var name_pattern = /^\w{6,16}$/;
+    var name_error = "* Invalid input: username must be 6-16 characters";
 
-	// check("name", name, name_pattern, name_error);
-	var result = name_pattern.test(name);
+    // check("name", name, name_pattern, name_error);
+    var result = name_pattern.test(name);
 
-	if (result == false) {
+    if (result == false) {
 
-		$("name_req").innerHTML = name_error;
-		$("name").select();
+        $("name_req").innerHTML = name_error;
+        $("name").select();
 
-		return false;
+        return false;
 
-	} else{
+    } else{
 
-		$("name_req").innerHTML = "";
-	}
+        $("name_req").innerHTML = "";
+    }
 
-	//	EMAIL
-	var email = $("required").innerHTML;
-	
-	if (email != "") {
+    //  EMAIL
+    var email = $("required").innerHTML;
+    
+    if (email != "") {
 
-		$("email").select();
+        $("email").select();
 
-		return false;
-	} 
+        return false;
+    } 
 
 
-	//	PASSWORD
-	var password = $("pass").value;
-	var password_pattern = /^\w{6,16}$/;
-	var password_error = "* Invalid input: passwords must be 6-16 characters";
+    //  PASSWORD
+    var password = $("pass").value;
+    var password_pattern = /^\w{6,16}$/;
+    var password_error = "* Invalid input: passwords must be 6-16 characters";
 
-	var result1 = password_pattern.test(password);
-	if (result1 == false) {
+    var result1 = password_pattern.test(password);
+    if (result1 == false) {
 
-		$("pass_req").innerHTML = password_error;
-		$("pass").select();
+        $("pass_req").innerHTML = password_error;
+        $("pass").select();
 
-		return false;
+        return false;
 
-	} else{
+    } else{
 
-		$("pass_req").innerHTML = "";
-	}
+        $("pass_req").innerHTML = "";
+    }
 
-	//	VERIFY PASS
-	var verify_passwod = $("ver_pass").value;
+    //  VERIFY PASS
+    var verify_passwod = $("ver_pass").value;
 
-	if (password != verify_passwod) {
+    if (password != verify_passwod) {
 
-		$("ver_pass_req").innerHTML = "* Password doesnt match";
-		$("ver_pass").select();
+        $("ver_pass_req").innerHTML = "* Password doesnt match";
+        $("ver_pass").select();
 
-		return false;
+        return false;
 
-	} else{
+    } else{
 
-		$("ver_pass_req").innerHTML = "";
-	}
+        $("ver_pass_req").innerHTML = "";
+    }
 
 }
 
@@ -92,18 +92,18 @@ function formValidation(){
 
 function email_Av(value){
 
-	new Ajax.Request( "backend/email_check.php", 
-	{
-		method: "POST",
-		parameters: {email: value},
-		onSuccess: displayResult
-	}
-	);
+    new Ajax.Request( "backend/email_check.php", 
+    {
+        method: "POST",
+        parameters: {email: value},
+        onSuccess: displayResult
+    }
+    );
 }
 
 function displayResult(ajax){
 
-	$("required").innerHTML =  ajax.responseText;
+    $("required").innerHTML =  ajax.responseText;
 }
 
 
@@ -112,44 +112,44 @@ function displayResult(ajax){
 // Done by Charlie
 function setContent(evt, page){
 
-	var content, links;
+    var content, links;
 
-	content = document.getElementsByClassName("z_tabcontent");
-	for (var i = 0; i < content.length; i++) {
-		content[i].style.display = "none";
-	}
+    content = document.getElementsByClassName("z_tabcontent");
+    for (var i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
 
-	links = document.getElementsByClassName("z_tab");
-	for (var i = 0; i < links.length; i++) {
-		links[i].className = links[i].className.replace("active", "");
-	}
+    links = document.getElementsByClassName("z_tab");
+    for (var i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace("active", "");
+    }
 
-	document.getElementById(page).style.display = "block";
+    document.getElementById(page).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
 function allowDelete(){
-	document.getElementById("delete_submit").style.visibility = "visible";
+    document.getElementById("delete_submit").style.visibility = "visible";
 }
 
 function changeBG(){
 
-	var newColor = document.getElementById("backColor").value;
-	document.body.style.backgroundColor = newColor;
+    var newColor = document.getElementById("backColor").value;
+    document.body.style.backgroundColor = newColor;
 
-	//stores background color in local storage under bg
-	localStorage.setItem("bg", newColor);
+    //stores background color in local storage under bg
+    localStorage.setItem("bg", newColor);
 
 }
 
 //
 function getBG(){
 
-	var x = localStorage.getItem("bg");
+    var x = localStorage.getItem("bg");
 
-	if (x != ""){
-		document.body.style.backgroundColor = x;
-	} 
+    if (x != ""){
+        document.body.style.backgroundColor = x;
+    } 
 }
 
 /****AJAX FOR WORLD MAP****/
@@ -158,25 +158,25 @@ function getBG(){
 //function increment(){
 function increment(name, user, spanId){ //used for getting user, span id so function can be reused
 
-	//global vars used for notify()
-	note = $(spanId);
-	statName = name;
+    //global vars used for notify()
+    note = $(spanId);
+    statName = name;
 
-	var amount = $(statName).value;
-	var id = $(statName).name;
+    var amount = $(statName).value;
+    var id = $(statName).name;
 
-	//value is hard coded but will come from session vars in BB php
-	//var user= 1;
+    //value is hard coded but will come from session vars in BB php
+    //var user= 1;
 
-	//AJAX REQUEST
-	new Ajax.Request("backend/update_stats.php",{
+    //AJAX REQUEST
+    new Ajax.Request("backend/update_stats.php",{
 
-		method: "POST",
-		parameters: {userId:user, statAmount:amount, statId:id},
-		onSuccess: notify
-		//onFailure: fail
+        method: "POST",
+        parameters: {userId:user, statAmount:amount, statId:id},
+        onSuccess: notify
+        //onFailure: fail
 
-	});
+    });
 }
 
 /***AJAX response****/
@@ -185,13 +185,13 @@ function increment(name, user, spanId){ //used for getting user, span id so func
 /*
 function notify(ajax){
 
-	//scriptlicious
-	new Effect.Appear(note, {duration:0.5});
+    //scriptlicious
+    new Effect.Appear(note, {duration:0.5});
 
-	note.innerHTML = "++ "+statName+" is increased by "+ajax.responseText;
+    note.innerHTML = "++ "+statName+" is increased by "+ajax.responseText;
 
-	//scriptlicious
-	new Effect.Fade(note, {duration: 2});
+    //scriptlicious
+    new Effect.Fade(note, {duration: 2});
 }
 */
 
@@ -201,28 +201,28 @@ var ravers;
 //by Ryan
 function notify(ajax)
 {
-	//notification 
-	note.innerHTML = "++ "+statName+" is increased by "+ajax.responseText;
+    //notification 
+    note.innerHTML = "++ "+statName+" is increased by "+ajax.responseText;
 
-	//css change
-	ravers = setInterval("raveTitle()",40);
-	setTimeout("changeCSS()",999);
+    //css change
+    ravers = setInterval("raveTitle()",40);
+    setTimeout("changeCSS()",999);
 }
 
 //set title to random color 
 //by Ryan
 function raveTitle()
 {
-	document.getElementById("header").style.color = getRandomColor();
+    document.getElementById("header").style.color = getRandomColor();
 }
 
 
 //by Ryan
 function changeCSS()
 {
-	note.innerHTML = "";
-	clearInterval(ravers);
-	document.getElementById("header").style.color = "black";
+    note.innerHTML = "";
+    clearInterval(ravers);
+    document.getElementById("header").style.color = "black";
 }
 
 
@@ -233,35 +233,35 @@ function changeCSS()
 //sets background to random color
 function rave(){
 
-	document.body.style.backgroundColor = getRandomColor();
+    document.body.style.backgroundColor = getRandomColor();
 
 }
 
 //generates random color
 function getRandomColor(){
 
-	var letters = '0123456789ABCDEF';
-	var color = '#';
+    var letters = '0123456789ABCDEF';
+    var color = '#';
 
-	for (var i = 0; i < 6; i++) {
-		color += letters[Math.floor(Math.random() * 16)];
-	}
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
 
-	return color;
+    return color;
 }
 
 //alerts user and sets interval and plays audio to engage in party mode
 function startParty(){
 
-	var warning = confirm("VOULD YOO LIKE TO PARTY??");
+    var warning = confirm("VOULD YOO LIKE TO PARTY??");
 
-	if(warning){
+    if(warning){
 
-		setInterval("rave()",40);
+        setInterval("rave()",40);
 
-		//play audio
-		var audio = document.getElementById("audio");
-		audio.play();
-	}
-	
+        //play audio
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+    
 }
