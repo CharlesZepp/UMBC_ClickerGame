@@ -10,85 +10,85 @@ Charlie Zepp : Test Lead
 
 /*****DEFAULT PAGE STYLE*****/
 body {
-	background-color:grey;
+    background-color:grey;
 }
 
 header{
-	background-color: seashell;
-	border: 4px black solid;
-	width: 60%;
-	margin: 1em auto;
-	text-align: center;
+    background-color: seashell;
+    border: 4px black solid;
+    width: 60%;
+    margin: 1em auto;
+    text-align: center;
 }
 
 /**FIX CSS HEADER FILE CHANGE TO DIV**/
 .header{
-	background-color: seashell;
-	border: 4px black solid;
-	width: 60%;
-	margin: 1em auto;
-	text-align: center;
+    background-color: seashell;
+    border: 4px black solid;
+    width: 60%;
+    margin: 1em auto;
+    text-align: center;
 }
 
 .header a:hover{
-	background-color: grey;
+    background-color: grey;
 }
 
 footer{
-	text-align: center;
+    text-align: center;
 }
 
 .footer{
-	text-align: center;
+    text-align: center;
 }
 
 .header1{
-	text-align:center;
+    text-align:center;
 }
 
 
 .fill{
-	background-color: seashell;
-	border: 4px black solid;
-	width: 60%;
-	height: 100%;
-	margin: 1em auto;
-	padding-bottom: 20px;
+    background-color: seashell;
+    border: 4px black solid;
+    width: 60%;
+    height: 100%;
+    margin: 1em auto;
+    padding-bottom: 20px;
 
 }
 
 .center{
-	text-align: center;
+    text-align: center;
 }
 
 .right{
-	text-align: right;
+    text-align: right;
 }
 
 .left{
-	text-align: left;
+    text-align: left;
 }
 
 
 /******TAB STYLES******/
 
 .header a{
-	display: inline-block;
-	background-color: #DCDCDC;
-	text-decoration: none;
-	padding: 2px;
-	color: black;
-	margin-bottom: 4px;
-	border: 1px solid black;
+    display: inline-block;
+    background-color: #DCDCDC;
+    text-decoration: none;
+    padding: 2px;
+    color: black;
+    margin-bottom: 4px;
+    border: 1px solid black;
 }
 
 .z_tab {
-	float: left;
-	border: 1px solid black;
-	background-color: #DCDCDC; 
-	width: 25%;
-	overflow: auto;
-	margin-left: 1px;
+    float: left;
+    border: 1px solid black;
+    background-color: #DCDCDC; 
+    width: 25%;
+    overflow: auto;
+    margin-left: 1px;
 }
 
 .z_tab button{
@@ -106,95 +106,95 @@ footer{
 }
 
 .z_tab button:hover{
-	background-color: grey;
+    background-color: grey;
 }
 /*Links*/
 .z_tab a {
-	display: block;
-	background-color: inherit; /*from z_tab*/
-	color: black;
-	padding: 18px 0px 18px 0px;
-	margin: none;
-	width: 100%;
-	text-align: left;
-	text-decoration: none;
+    display: block;
+    background-color: inherit; /*from z_tab*/
+    color: black;
+    padding: 18px 0px 18px 0px;
+    margin: none;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
 }
 
 .z_tab input[type="submit"]{
-	display: block;
-	background-color: inherit;/*from z_tab*/
-	width: 100%;
+    display: block;
+    background-color: inherit;/*from z_tab*/
+    width: 100%;
 }
 
 /*hover feature for clickable items*/
 .z_tab a:hover, header a:hover,
 .z_tab input[type="submit"]:hover{
-	background-color: grey;
+    background-color: grey;
 }
 
 .z_tab a.active{
-	background-color: grey;
+    background-color: grey;
 }
 
 .z_tabcontent{
-	display: block;
-	margin: 0 auto;
-	width: 250px;
-	height: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 100%;
 }
 
 img.center{
-	display: block;
-	margin: 0 auto;
-	width: 300px;
-	height:300px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height:300px;
 }
 
 img.centerIcon{
-	display: block;
-	margin: 0 auto;
-	width: 80%;
-	height:80%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height:80%;
 }
 
 
 /*****FORM STYLES****/
 .z_form {
-	margin:20px auto; 
-	max-width: 400px;
-	padding: 20px 12px 10px 20px;
-	font: 13px Helvetica, Verdana, sans-serif;
+    margin:20px auto; 
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Helvetica, Verdana, sans-serif;
 }
 
 .z_form li {
-	padding: 0;
-	display: block;
-	list-style: none;
-	margin: 10px 0 0 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
 }
 
 .z_form label{
-	margin:0 0 3px 0;
-	padding:0px;
-	display:block;
-	font-weight: bold;
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
 }
 
 .z_form textarea{
-	max-width: 300px; 
-	max-height: 300px;
+    max-width: 300px; 
+    max-height: 300px;
 }
 
 .z_form input[type=text], 
 .z_form input[type=password],
 .z_form input[type=email]
 {
-	box-sizing: border-box;
-	border:1px solid black;
-	padding: 7px;
-	margin:0px;
-	width: 100%;
-	outline: none;  
+    box-sizing: border-box;
+    border:1px solid black;
+    padding: 7px;
+    margin:0px;
+    width: 100%;
+    outline: none;  
 }
 
 /*focus selector is used to highlight on selected item, found on W3*/
@@ -202,8 +202,8 @@ img.centerIcon{
 .z_form input[type=password]:focus,
 .z_form input[type=email]:focus,
 .z_form select:focus{
-	box-shadow: 0 0 8px red;
-	border: 1px solid red;
+    box-shadow: 0 0 8px red;
+    border: 1px solid red;
 }
 /******FORM STYLES******/
 
@@ -215,19 +215,19 @@ img.centerIcon{
 input[type="radio"], 
 input[type="submit"]{
 
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .spacer{
-	clear:left;
+    clear:left;
 }
 
 .filter{
-	filter: opacity(30%);
+    filter: opacity(30%);
 }
 
 /*shows user what inputs are required*/
 .required {
-	color:red;
+    color:red;
 }
 /*********EXTRAS**********/

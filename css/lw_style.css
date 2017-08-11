@@ -1,38 +1,38 @@
 /* 
  Name: Logan Wes
-		 Section: 01
-		 Description: Group Project UMBC Idle Game. CSS for admin form.
-		 Last Updated: Mar. 28, 2017
+         Section: 01
+         Description: Group Project UMBC Idle Game. CSS for admin form.
+         Last Updated: Mar. 28, 2017
 
 */
 
 .eventForm {
-	width: 100%;  
-	margin: 0 0 1.5em 0;  
-	padding: 0;  
+    width: 100%;  
+    margin: 0 0 1.5em 0;  
+    padding: 0;  
 }
 
 textarea {
-	max-width: 300px;
-	max-height:300px
+    max-width: 300px;
+    max-height:300px
 }
 .label {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .spacer {
-	height: 100px;
+    height: 100px;
 }
 h1{
-	text-align: center;
+    text-align: center;
 }
 .warning {
-	font-weight: bold;
+    font-weight: bold;
 }
 input[type=text] {
-	background-color: white;
+    background-color: white;
 }
 .locationImg {
-	height: 20px;
-	width: 20px;
+    height: 20px;
+    width: 20px;
 }

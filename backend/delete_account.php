@@ -5,8 +5,8 @@ include'z_func.php';
 session_start();
 
 if (!isset($_SESSION["user"]) && empty($_SESSION["user"])){
-	header('Location: https://swe.umbc.edu/~bw16891/is448/project/login_page.html');
-	die();
+    header('Location: https://swe.umbc.edu/~bw16891/is448/project/login_page.html');
+    die();
 }
 
 $user = $_SESSION["user"];

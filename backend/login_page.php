@@ -13,7 +13,7 @@ $email = mysqli_real_escape_string($db,htmlspecialchars($_POST["user_email"]));
 $password = mysqli_real_escape_string($db,htmlspecialchars($_POST["user_password"]));
 if(mysqli_connect_errno())
 {
-	exit("Error- Coud not connect to database");
+    exit("Error- Coud not connect to database");
 }
 $password_query = "SELECT password from user where email = '$email';";
 
@@ -26,15 +26,15 @@ $user_id_query = "Select userId from user where password ='$actual_password';";
 $userResult = mysqli_query($db, $user_id_query);
 $userId = mysqli_fetch_array($userResult);
 
-	if($actual_password == $password)
-	{
-		$_SESSION["user"] = $userId["userId"];
-		echo true;
-	}
-	else
-	{
-		echo false;
-	}
+    if($actual_password == $password)
+    {
+        $_SESSION["user"] = $userId["userId"];
+        echo true;
+    }
+    else
+    {
+        echo false;
+    }
 
 ?>
 

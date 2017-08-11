@@ -23,25 +23,25 @@ $result = q_exe_r($q);
 $array = array();
 while ($row = mysqli_fetch_array($result)) {
 
-	$array[] = $row['email'];
+    $array[] = $row['email'];
 }
 
 #checks to make sure email is an UMBC email
 if (!preg_match('/^([\w\_])+\@umbc.edu$/', $email)){
 
-	$error = "* Must be a UMBC email";
+    $error = "* Must be a UMBC email";
 }
 else{ 
 
-	#If email passes reg exp than it checks to see if email has already been used
-	if(in_array($email, $array)){
+    #If email passes reg exp than it checks to see if email has already been used
+    if(in_array($email, $array)){
 
-		$error = "* Sorry, But this email has already been taken";
+        $error = "* Sorry, But this email has already been taken";
 
-	} else{
+    } else{
 
-		$error = "";
-	}
+        $error = "";
+    }
 }
 
 #AJAX RESPONSE TEXT
