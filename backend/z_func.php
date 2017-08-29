@@ -88,31 +88,4 @@ function deleteAccount($userId){
     q_exe($q3);
 }
 
-/*
-#password retrieve
-function pass_R($userId){
-
-    $db = db_connect();
-
-    $q = "SELECT password FROM `zepp1`.`user` WHERE `userId` = $userId";
-    $result = q_exe_r($q);
-
-
-        while($row = mysqli_fetch_array($result)){ ########### wont need use session var
-            $pass = "$row[userId]";
-        }
-
-    return $result;
-}
-
-#update old password w/ new password
-function pass_U($userId, $new_pass){
-
-    $db = db_connect();
-
-    $q = "UPDATE user SET password = $new_pass WHERE `userId` = $userId";
-    $result = q_exe_r($q);
-
-}
-*/
 ?>

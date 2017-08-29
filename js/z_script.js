@@ -35,7 +35,7 @@ function formValidation(){
 
         return false;
 
-    } else{
+    } else {
 
         $("name_req").innerHTML = "";
     }
@@ -64,7 +64,7 @@ function formValidation(){
 
         return false;
 
-    } else{
+    } else {
 
         $("pass_req").innerHTML = "";
     }
@@ -79,7 +79,7 @@ function formValidation(){
 
         return false;
 
-    } else{
+    } else {
 
         $("ver_pass_req").innerHTML = "";
     }
